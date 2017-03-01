@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Testcases for Onsen CSS Components</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../onsen-css-components.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/brackets.css">
+    <link href="/patterns/lib/font_awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/patterns/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  </head>
+  <body ng-app="app" ontouchstart="" class="light">
+    <div id="wrapper">
+      <div class="max-width">
+        <div id="sideNav">
+          <nav class="site">
+            <ul>
+              <li><a>Home</a></li>
+            </ul>
+          </nav>
+          <div class="combo">
+            <select class="docNav">
+              <option value="index.html">Onsen Css Components Blue Basic Theme</option>
+              <option value="onsen-css-components-blue-theme.html">Onsen Css Components Blue Theme</option>
+              <option value="onsen-css-components-dark-theme.html">Onsen Css Components Dark Theme</option>
+              <option value="onsen-css-components-default.html">Onsen Css Components Default</option>
+              <option value="onsen-css-components-purple-theme.html">Onsen Css Components Purple Theme</option>
+              <option value="onsen-css-components-sunshine-theme.html">Onsen Css Components Sunshine Theme</option>
+              <option value="onsen-css-components.html" selected="selected">Onsen Css Components</option>
+            </select>
+          </div>
+          <div id="pageNav">
+            <ul>
+              <li><a href="#switch">Switch</a></li>
+              <li><a href="#range">Range</a></li>
+              <li><a href="#navigation-bar">Navigation Bar</a></li>
+              <li><a href="#navigation-bar-item">Navigation Bar Item</a></li>
+              <li><a href="#navigation-bar-with-outline-button">Navigation Bar with Outline Button</a></li>
+              <li><a href="#android-like-navigation-bar">Android-like Navigation Bar</a></li>
+              <li><a href="#android-like-navigation-bar2)">Android-like Navigation Bar(2)</a></li>
+              <li><a href="#transparent-navigation-bar">Transparent Navigation Bar</a></li>
+              <li><a href="#navigation-bar-with-outline-button">Navigation Bar with Outline Button</a></li>
+              <li><a href="#transparent-navigation-bar">Transparent Navigation Bar</a></li>
+              <li><a href="#bottom-bar">Bottom Bar</a></li>
+              <li><a href="#navigation-bar-with-segment">Navigation Bar with Segment</a></li>
+              <li><a href="#button">Button</a></li>
+              <li><a href="#outline-button">Outline Button</a></li>
+              <li><a href="#light-button">Light Button</a></li>
+              <li><a href="#quiet-button">Quiet Button</a></li>
+              <li><a href="#call-to-action-button">Call To Action Button</a></li>
+              <li><a href="#large-button">Large Button</a></li>
+              <li><a href="#large-quiet-button">Large Quiet Button</a></li>
+              <li><a href="#large-call-to-action-button">Large Call To Action Button</a></li>
+              <li><a href="#button-bar">Button Bar</a></li>
+              <li><a href="#segment">Segment</a></li>
+              <li><a href="#icon-tab-bar">Icon Tab Bar</a></li>
+              <li><a href="#tab-bar">Tab Bar</a></li>
+              <li><a href="#icon-only-tab-bar">Icon Only Tab Bar</a></li>
+              <li><a href="#top-tab-bar">Top Tab Bar</a></li>
+              <li><a href="#bordered-top-tab-bar">Bordered Top Tab Bar</a></li>
+              <li><a href="#notification">Notification</a></li>
+              <li><a href="#toolbar-button">Toolbar Button</a></li>
+              <li><a href="#checkbox">Checkbox</a></li>
+              <li><a href="#no-border-checkbox">No border Checkbox</a></li>
+              <li><a href="#radio-button">Radio Button</a></li>
+              <li><a href="#list">List</a></li>
+              <li><a href="#noborder-list">Noborder List</a></li>
+              <li><a href="#category-list-header">Category List Header</a></li>
+              <li><a href="#tappable-list">Tappable List</a></li>
+              <li><a href="#switch-in-list-item">Switch in List Item</a></li>
+              <li><a href="#list-item-with-chevron">List Item with Chevron</a></li>
+              <li><a href="#inset-list">Inset List</a></li>
+              <li><a href="#radio-button-in-list-item">Radio Button in List Item</a></li>
+              <li><a href="#checkbox-in-list-item">Checkbox in List Item</a></li>
+              <li><a href="#no-border-checkbox-in-list-item">No border Checkbox in List Item</a></li>
+              <li><a href="#text-input-in-list-item">Text Input in List Item</a></li>
+              <li><a href="#textarea-in-list-item">Textarea in List Item</a></li>
+              <li><a href="#right-label-in-list-item">Right Label in List Item</a></li>
+              <li><a href="#search-input">Search Input</a></li>
+              <li><a href="#text-input">Text Input</a></li>
+              <li><a href="#transparent-text-input">Transparent Text Input</a></li>
+              <li><a href="#underbar-text-input">Underbar Text Input</a></li>
+              <li><a href="#textarea">Textarea</a></li>
+              <li><a href="#textarea-transparent">Textarea Transparent</a></li>
+              <li><a href="#dialog">Dialog</a></li>
+              <li><a href="#alert-dialog">Alert Dialog</a></li>
+              <li><a href="#alert-dialog-without-title">Alert Dialog without Title</a></li>
+              <li><a href="#alert-dialog-with-multiple-buttons">Alert Dialog with Multiple Buttons</a></li>
+              <li><a href="#alert-dialog-with-multiple-buttons-2">Alert Dialog with Multiple Buttons 2</a></li>
+              <li><a href="#android-like-alert-dialog">Android-like Alert Dialog</a></li>
+              <li><a href="#popover">Popover</a></li>
+              <li><a href="#popoverdown)">Popover(down)</a></li>
+              <li><a href="#popoverleft)">Popover(left)</a></li>
+              <li><a href="#popoverright)">Popover(right)</a></li>
+              <li><a href="#android-like-popover">Android-like Popover</a></li>
+              <li><a href="#modal">Modal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="site">
+        <header id="main-header">
+          <div class="max-width">
+            <hgroup>
+              <h1>Testcases for Onsen CSS Components</h1>
+              <p></p>
+            </hgroup>
+            <nav>
+              <ul>
+              </ul>
+            </nav><a id="slide-menu-button" class="icon-button--large--quiet"><span class="icon--large icon--menu-stack"></span></a>
+          </div>
+        </header>
+        <div id="content" class="max-width">
+          <article class="component">
+            <div style="clear: both"></div>
+          </article>
+          <article id="switch" class="component">
+            <header>
+              <h2>Switch</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><label class="switch">  <input type="checkbox" class="switch__input">  <div class="switch__toggle"></div></label><label class="switch">  <input type="checkbox" class="switch__input" checked>  <div class="switch__toggle"></div></label><label class="switch">  <input type="checkbox" class="switch__input" disabled>  <div class="switch__toggle"></div></label></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;label class=&quot;switch&quot;&gt;  &lt;input type=&quot;checkbox&quot; class=&quot;switch__input&quot;&gt;  &lt;div class=&quot;switch__toggle&quot;&gt;&lt;/div&gt;&lt;/label&gt;&lt;label class=&quot;switch&quot;&gt;  &lt;input type=&quot;checkbox&quot; class=&quot;switch__input&quot; checked&gt;  &lt;div class=&quot;switch__toggle&quot;&gt;&lt;/div&gt;&lt;/label&gt;&lt;label class=&quot;switch&quot;&gt;  &lt;input type=&quot;checkbox&quot; class=&quot;switch__input&quot; disabled&gt;  &lt;div class=&quot;switch__toggle&quot;&gt;&lt;/div&gt;&lt;/label&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="range" class="component">
+            <header>
+              <h2>Range</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><input type="range" class="range"><input type="range" class="range" disabled></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;input type=&quot;range&quot; class=&quot;range&quot;&gt;&lt;input type=&quot;range&quot; class=&quot;range&quot; disabled&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="navigation-bar" class="component">
+            <header>
+              <h2>Navigation Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="navigation-bar">  <div class="navigation-bar__center">Navigation Bar</div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;navigation-bar&quot;&gt;  &lt;div class=&quot;navigation-bar__center&quot;&gt;Navigation Bar&lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="navigation-bar-item" class="component">
+            <header>
+              <h2>Navigation Bar Item</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="navigation-bar">  <div class="navigation-bar__left">    <span class="toolbar-button--quiet navigation-bar__line-height">      <i class="ion-navicon" style="font-size:32px; vertical-align:-6px;"></i>    </span>  </div>  <div class="navigation-bar__center">    Navigation Bar  </div>  <div class="navigation-bar__right">    <span class="toolbar-button--quiet navigation-bar__line-height">Label</span>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;navigation-bar&quot;&gt;  &lt;div class=&quot;navigation-bar__left&quot;&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;      &lt;i class=&quot;ion-navicon&quot; style=&quot;font-size:32px; vertical-align:-6px;&quot;&gt;&lt;/i&gt;    &lt;/span&gt;  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__center&quot;&gt;    Navigation Bar  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__right&quot;&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;Label&lt;/span&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="navigation-bar-with-outline-button" class="component">
+            <header>
+              <h2>Navigation Bar with Outline Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. --><div class="navigation-bar">  <div class="navigation-bar__left">    <span class="toolbar-button--outline navigation-bar__line-height">      <i class="ion-navicon" style="font-size:32px; vertical-align:-6px;"></i>    </span>  </div>  <div class="navigation-bar__center">    Title  </div>  <div class="navigation-bar__right">    <span class="toolbar-button--outline navigation-bar__line-height">Button</span>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. --&gt;&lt;div class=&quot;navigation-bar&quot;&gt;  &lt;div class=&quot;navigation-bar__left&quot;&gt;    &lt;span class=&quot;toolbar-button--outline navigation-bar__line-height&quot;&gt;      &lt;i class=&quot;ion-navicon&quot; style=&quot;font-size:32px; vertical-align:-6px;&quot;&gt;&lt;/i&gt;    &lt;/span&gt;  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__center&quot;&gt;    Title  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__right&quot;&gt;    &lt;span class=&quot;toolbar-button--outline navigation-bar__line-height&quot;&gt;Button&lt;/span&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="android-like-navigation-bar" class="component">
+            <header>
+              <h2>Android-like Navigation Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="navigation-bar navigation-bar--android">  <div class="navigation-bar__left navigation-bar--android__left">    <span class="toolbar-button navigation-bar__line-height" style="padding:0 5px 0 5px;"><i class="ion-android-arrow-back" style="font-size:20px;"></i></span>  </div>  <div class="navigation-bar__center navigation-bar--android__center">    <span class="toolbar-button navigation-bar__line-height" style="padding:0">      <i class="ion-cube" style="font-size:20px;"></i> App Bar    </span>  </div>  <div class="navigation-bar__right navigation-bar--android__right">    <span class="toolbar-button--quiet navigation-bar__line-height">      <i class="ion-android-share" style="font-size:20px;"></i>    </span>    <span class="toolbar-button--quiet navigation-bar__line-height">      <i class="ion-android-more" style="font-size:20px;"></i>    </span>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;navigation-bar navigation-bar--android&quot;&gt;  &lt;div class=&quot;navigation-bar__left navigation-bar--android__left&quot;&gt;    &lt;span class=&quot;toolbar-button navigation-bar__line-height&quot; style=&quot;padding:0 5px 0 5px;&quot;&gt;&lt;i class=&quot;ion-android-arrow-back&quot; style=&quot;font-size:20px;&quot;&gt;&lt;/i&gt;&lt;/span&gt;  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__center navigation-bar--android__center&quot;&gt;    &lt;span class=&quot;toolbar-button navigation-bar__line-height&quot; style=&quot;padding:0&quot;&gt;      &lt;i class=&quot;ion-cube&quot; style=&quot;font-size:20px;&quot;&gt;&lt;/i&gt; App Bar    &lt;/span&gt;  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__right navigation-bar--android__right&quot;&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;      &lt;i class=&quot;ion-android-share&quot; style=&quot;font-size:20px;&quot;&gt;&lt;/i&gt;    &lt;/span&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;      &lt;i class=&quot;ion-android-more&quot; style=&quot;font-size:20px;&quot;&gt;&lt;/i&gt;    &lt;/span&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="android-like-navigation-bar2)" class="component">
+            <header>
+              <h2>Android-like Navigation Bar(2)</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="navigation-bar navigation-bar--android">  <div class="navigation-bar__left navigation-bar--android__left">    <span class="toolbar-button navigation-bar__line-height" style="padding:0 5px 0 0;"><i class="ion-android-drawer" style="font-size:20px;"></i></span>  </div>  <div class="navigation-bar__center navigation-bar--android__center">    App Bar  </div>  <div class="navigation-bar__right navigation-bar--android__right">    <span class="toolbar-button--quiet navigation-bar__line-height">      <i class="ion-android-star" style="font-size:20px;"></i>    </span>    <span class="toolbar-button--quiet navigation-bar__line-height">      <i class="ion-android-search" style="font-size:20px;"></i>    </span>    <span class="toolbar-button--quiet navigation-bar__line-height">      <i class="ion-android-more" style="font-size:20px;"></i>    </span>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;navigation-bar navigation-bar--android&quot;&gt;  &lt;div class=&quot;navigation-bar__left navigation-bar--android__left&quot;&gt;    &lt;span class=&quot;toolbar-button navigation-bar__line-height&quot; style=&quot;padding:0 5px 0 0;&quot;&gt;&lt;i class=&quot;ion-android-drawer&quot; style=&quot;font-size:20px;&quot;&gt;&lt;/i&gt;&lt;/span&gt;  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__center navigation-bar--android__center&quot;&gt;    App Bar  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__right navigation-bar--android__right&quot;&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;      &lt;i class=&quot;ion-android-star&quot; style=&quot;font-size:20px;&quot;&gt;&lt;/i&gt;    &lt;/span&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;      &lt;i class=&quot;ion-android-search&quot; style=&quot;font-size:20px;&quot;&gt;&lt;/i&gt;    &lt;/span&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;      &lt;i class=&quot;ion-android-more&quot; style=&quot;font-size:20px;&quot;&gt;&lt;/i&gt;    &lt;/span&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="transparent-navigation-bar" class="component">
+            <header>
+              <h2>Transparent Navigation Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="navigation-bar navigation-bar--transparent">  <div class="navigation-bar__left">    <span class="toolbar-button--quiet navigation-bar__line-height">      <i class="ion-navicon" style="font-size:32px; vertical-align:-6px;"></i>    </span>  </div>  <div class="navigation-bar__center">    Navigation Bar  </div>  <div class="navigation-bar__right">    <span class="toolbar-button--quiet navigation-bar__line-height">Label</span>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;navigation-bar navigation-bar--transparent&quot;&gt;  &lt;div class=&quot;navigation-bar__left&quot;&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;      &lt;i class=&quot;ion-navicon&quot; style=&quot;font-size:32px; vertical-align:-6px;&quot;&gt;&lt;/i&gt;    &lt;/span&gt;  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__center&quot;&gt;    Navigation Bar  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__right&quot;&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;Label&lt;/span&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="navigation-bar-with-outline-button" class="component">
+            <header>
+              <h2>Navigation Bar with Outline Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. --><div class="navigation-bar">  <div class="navigation-bar__left">    <span class="toolbar-button--outline navigation-bar__line-height">      <i class="ion-navicon" style="font-size:32px; vertical-align:-6px;"></i>    </span>  </div>  <div class="navigation-bar__center">    Title  </div>  <div class="navigation-bar__right">    <span class="toolbar-button--outline navigation-bar__line-height">Button</span>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. --&gt;&lt;div class=&quot;navigation-bar&quot;&gt;  &lt;div class=&quot;navigation-bar__left&quot;&gt;    &lt;span class=&quot;toolbar-button--outline navigation-bar__line-height&quot;&gt;      &lt;i class=&quot;ion-navicon&quot; style=&quot;font-size:32px; vertical-align:-6px;&quot;&gt;&lt;/i&gt;    &lt;/span&gt;  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__center&quot;&gt;    Title  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__right&quot;&gt;    &lt;span class=&quot;toolbar-button--outline navigation-bar__line-height&quot;&gt;Button&lt;/span&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="transparent-navigation-bar" class="component">
+            <header>
+              <h2>Transparent Navigation Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. --><div class="navigation-bar navigation-bar--transparent">  <div class="navigation-bar__left">    <span class="toolbar-button--quiet navigation-bar__line-height">      <i class="ion-navicon" style="font-size:32px; vertical-align:-6px;"></i>    </span>  </div>  <div class="navigation-bar__center">    Navigation Bar  </div>  <div class="navigation-bar__right">    <span class="toolbar-button--quiet navigation-bar__line-height">Label</span>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. --&gt;&lt;div class=&quot;navigation-bar navigation-bar--transparent&quot;&gt;  &lt;div class=&quot;navigation-bar__left&quot;&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;      &lt;i class=&quot;ion-navicon&quot; style=&quot;font-size:32px; vertical-align:-6px;&quot;&gt;&lt;/i&gt;    &lt;/span&gt;  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__center&quot;&gt;    Navigation Bar  &lt;/div&gt;  &lt;div class=&quot;navigation-bar__right&quot;&gt;    &lt;span class=&quot;toolbar-button--quiet navigation-bar__line-height&quot;&gt;Label&lt;/span&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="bottom-bar" class="component">
+            <header>
+              <h2>Bottom Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="bottom-bar">  <div class="bottom-bar__line-height" style="text-align:center">Bottom Toolbar</div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;bottom-bar&quot;&gt;  &lt;div class=&quot;bottom-bar__line-height&quot; style=&quot;text-align:center&quot;&gt;Bottom Toolbar&lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="navigation-bar-with-segment" class="component">
+            <header>
+              <h2>Navigation Bar with Segment</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="navigation-bar">  <div class="navigation-bar__center">    <div class="button-bar" style="width:200px;margin:7px 50px;">      <div class="button-bar__item">        <input type="radio" name="navi-segment-a" checked>        <div class="button-bar__button">One</div>      </div>      <div class="button-bar__item">        <input type="radio" name="navi-segment-a">        <div class="button-bar__button">Two</div>      </div>    </div>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;navigation-bar&quot;&gt;  &lt;div class=&quot;navigation-bar__center&quot;&gt;    &lt;div class=&quot;button-bar&quot; style=&quot;width:200px;margin:7px 50px;&quot;&gt;      &lt;div class=&quot;button-bar__item&quot;&gt;        &lt;input type=&quot;radio&quot; name=&quot;navi-segment-a&quot; checked&gt;        &lt;div class=&quot;button-bar__button&quot;&gt;One&lt;/div&gt;      &lt;/div&gt;      &lt;div class=&quot;button-bar__item&quot;&gt;        &lt;input type=&quot;radio&quot; name=&quot;navi-segment-a&quot;&gt;        &lt;div class=&quot;button-bar__button&quot;&gt;Two&lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="button" class="component">
+            <header>
+              <h2>Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><button class="button">Button</button><button class="button" disabled>Button</button></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;button&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;button&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="outline-button" class="component">
+            <header>
+              <h2>Outline Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><button class="button button--outline">Button</button><button class="button button--outline" disabled>Button</button></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;button button--outline&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;button button--outline&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="light-button" class="component">
+            <header>
+              <h2>Light Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><button class="button button--light">Button</button><button class="button button--light" disabled>Button</button></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;button button--light&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;button button--light&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="quiet-button" class="component">
+            <header>
+              <h2>Quiet Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><button class="button--quiet">Button</button><button class="button--quiet" disabled>Button</button></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;button--quiet&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;button--quiet&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="call-to-action-button" class="component">
+            <header>
+              <h2>Call To Action Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><button class="button--cta">Button</button><button class="button--cta" disabled>Button</button></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;button--cta&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;button--cta&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="large-button" class="component">
+            <header>
+              <h2>Large Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><button class="button button--large">Button</button></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;button button--large&quot;&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="large-quiet-button" class="component">
+            <header>
+              <h2>Large Quiet Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><button class="button--large--quiet">Button</button></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;button--large--quiet&quot;&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="large-call-to-action-button" class="component">
+            <header>
+              <h2>Large Call To Action Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><button class="button--large--cta" >Button</button></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;button--large--cta&quot; &gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="button-bar" class="component">
+            <header>
+              <h2>Button Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="button-bar" style="width:280px;margin:0 auto;">  <div class="button-bar__item">    <button class="button-bar__button">One</button>  </div>  <div class="button-bar__item">    <button class="button-bar__button">Two</button>  </div>  <div class="button-bar__item">    <button class="button-bar__button">Three</button>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;button-bar&quot; style=&quot;width:280px;margin:0 auto;&quot;&gt;  &lt;div class=&quot;button-bar__item&quot;&gt;    &lt;button class=&quot;button-bar__button&quot;&gt;One&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;button-bar__item&quot;&gt;    &lt;button class=&quot;button-bar__button&quot;&gt;Two&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;button-bar__item&quot;&gt;    &lt;button class=&quot;button-bar__button&quot;&gt;Three&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="segment" class="component">
+            <header>
+              <h2>Segment</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="button-bar" style="width:280px;margin:0 auto;">  <div class="button-bar__item">    <input type="radio" name="segment-a" checked>    <button class="button-bar__button">One</button>  </div>  <div class="button-bar__item">    <input type="radio" name="segment-a">    <button class="button-bar__button">Two</button>  </div>  <div class="button-bar__item">    <input type="radio" name="segment-a">    <button class="button-bar__button">Three</button>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;button-bar&quot; style=&quot;width:280px;margin:0 auto;&quot;&gt;  &lt;div class=&quot;button-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;segment-a&quot; checked&gt;    &lt;button class=&quot;button-bar__button&quot;&gt;One&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;button-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;segment-a&quot;&gt;    &lt;button class=&quot;button-bar__button&quot;&gt;Two&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;button-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;segment-a&quot;&gt;    &lt;button class=&quot;button-bar__button&quot;&gt;Three&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="icon-tab-bar" class="component">
+            <header>
+              <h2>Icon Tab Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. --><div class="tab-bar">  <label class="tab-bar__item">    <input type="radio" name="tab-bar-a" checked="checked">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-stop"></i>      <div class="tab-bar__label">One</div>    </button>  </label>  <label class="tab-bar__item">    <input type="radio" name="tab-bar-a">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-record"></i>      <div class="tab-bar__label">Two</div>    </button>  </label>  <label class="tab-bar__item">    <input type="radio" name="tab-bar-a">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-star"></i>      <div class="tab-bar__label">Three</div>    </button>  </label></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. --&gt;&lt;div class=&quot;tab-bar&quot;&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-a&quot; checked=&quot;checked&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-stop&quot;&gt;&lt;/i&gt;      &lt;div class=&quot;tab-bar__label&quot;&gt;One&lt;/div&gt;    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-a&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-record&quot;&gt;&lt;/i&gt;      &lt;div class=&quot;tab-bar__label&quot;&gt;Two&lt;/div&gt;    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-a&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-star&quot;&gt;&lt;/i&gt;      &lt;div class=&quot;tab-bar__label&quot;&gt;Three&lt;/div&gt;    &lt;/button&gt;  &lt;/label&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="tab-bar" class="component">
+            <header>
+              <h2>Tab Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="tab-bar">  <label class="tab-bar__item">    <input type="radio" name="tab-bar-c" checked="checked">    <button class="tab-bar__button">      <div class="tab-bar__label">One</div>    </button>  </label>  <label class="tab-bar__item">    <input type="radio" name="tab-bar-c">    <button class="tab-bar__button">      <div class="tab-bar__label">Two</div>    </button>  </label>  <label class="tab-bar__item">    <input type="radio" name="tab-bar-c">    <button class="tab-bar__button">      <div class="tab-bar__label">Three</div>    </button>  </label></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;tab-bar&quot;&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-c&quot; checked=&quot;checked&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;div class=&quot;tab-bar__label&quot;&gt;One&lt;/div&gt;    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-c&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;div class=&quot;tab-bar__label&quot;&gt;Two&lt;/div&gt;    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-c&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;div class=&quot;tab-bar__label&quot;&gt;Three&lt;/div&gt;    &lt;/button&gt;  &lt;/label&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="icon-only-tab-bar" class="component">
+            <header>
+              <h2>Icon Only Tab Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. --><div class="tab-bar">  <label class="tab-bar__item">    <input type="radio" name="tab-bar-b" checked="checked">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-stop"></i>    </button>  </label>  <label class="tab-bar__item">    <input type="radio" name="tab-bar-b">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-record"></i>    </button>  </label>  <label class="tab-bar__item">    <input type="radio" name="tab-bar-b">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-star"></i>    </button>  </label>  <label class="tab-bar__item">    <input type="radio" name="tab-bar-b">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-ios-cloud-outline"></i>    </button>  </label>  <label class="tab-bar__item">    <input type="radio" name="tab-bar-b">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-ios-pie"></i>    </button>  </label></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. --&gt;&lt;div class=&quot;tab-bar&quot;&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-b&quot; checked=&quot;checked&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-stop&quot;&gt;&lt;/i&gt;    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-b&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-record&quot;&gt;&lt;/i&gt;    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-b&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-star&quot;&gt;&lt;/i&gt;    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-b&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-ios-cloud-outline&quot;&gt;&lt;/i&gt;    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-b&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-ios-pie&quot;&gt;&lt;/i&gt;    &lt;/button&gt;  &lt;/label&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="top-tab-bar" class="component">
+            <header>
+              <h2>Top Tab Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="tab-bar tab-bar--top">  <label class="tab-bar__item">    <input type="radio" name="top-tab-bar-a" checked="checked">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-stop"></i>    </button>  </label>  <label class="tab-bar__item">    <input type="radio" name="top-tab-bar-a">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-record"></i>    </button>  </label>  <label class="tab-bar__item">    <input type="radio" name="top-tab-bar-a">    <button class="tab-bar__button">      <i class="tab-bar__icon ion-star"></i>    </button>  </label></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;tab-bar tab-bar--top&quot;&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;top-tab-bar-a&quot; checked=&quot;checked&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-stop&quot;&gt;&lt;/i&gt;    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;top-tab-bar-a&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-record&quot;&gt;&lt;/i&gt;    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;top-tab-bar-a&quot;&gt;    &lt;button class=&quot;tab-bar__button&quot;&gt;      &lt;i class=&quot;tab-bar__icon ion-star&quot;&gt;&lt;/i&gt;    &lt;/button&gt;  &lt;/label&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="bordered-top-tab-bar" class="component">
+            <header>
+              <h2>Bordered Top Tab Bar</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="tab-bar tab-bar--top tab-bar--top-border">  <label class="tab-bar__item tab-bar--top-border__item">    <input type="radio" name="top-tab-bar-b" checked="checked">    <button class="tab-bar__button tab-bar--top-border__button">      Home    </button>  </label>  <label class="tab-bar__item tab-bar--top-border__item">    <input type="radio" name="top-tab-bar-b">    <button class="tab-bar__button tab-bar--top-border__button">      Comments    </button>  </label>  <label class="tab-bar__item tab-bar--top-border__item">    <input type="radio" name="top-tab-bar-b">    <button class="tab-bar__button tab-bar--top-border__button">      Activity    </button>  </label></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;tab-bar tab-bar--top tab-bar--top-border&quot;&gt;  &lt;label class=&quot;tab-bar__item tab-bar--top-border__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;top-tab-bar-b&quot; checked=&quot;checked&quot;&gt;    &lt;button class=&quot;tab-bar__button tab-bar--top-border__button&quot;&gt;      Home    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item tab-bar--top-border__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;top-tab-bar-b&quot;&gt;    &lt;button class=&quot;tab-bar__button tab-bar--top-border__button&quot;&gt;      Comments    &lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;tab-bar__item tab-bar--top-border__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;top-tab-bar-b&quot;&gt;    &lt;button class=&quot;tab-bar__button tab-bar--top-border__button&quot;&gt;      Activity    &lt;/button&gt;  &lt;/label&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="notification" class="component">
+            <header>
+              <h2>Notification</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><span class="notification">1</span><span class="notification">10</span><span class="notification">999</span></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;span class=&quot;notification&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;notification&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;notification&quot;&gt;999&lt;/span&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="toolbar-button" class="component">
+            <header>
+              <h2>Toolbar Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><!-- Prerequisite=This example use font-awesome(http://fortawesome.github.io/Font-Awesome/) to display icons. --><button class="toolbar-button">  <i class="fa fa-bell" style="font-size:17px"></i> Label</button><button class="toolbar-button toolbar-button--outline">  <i class="fa fa-bell" style="font-size:17px"></i> Label</button></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;!-- Prerequisite=This example use font-awesome(http://fortawesome.github.io/Font-Awesome/) to display icons. --&gt;&lt;button class=&quot;toolbar-button&quot;&gt;  &lt;i class=&quot;fa fa-bell&quot; style=&quot;font-size:17px&quot;&gt;&lt;/i&gt; Label&lt;/button&gt;&lt;button class=&quot;toolbar-button toolbar-button--outline&quot;&gt;  &lt;i class=&quot;fa fa-bell&quot; style=&quot;font-size:17px&quot;&gt;&lt;/i&gt; Label&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="checkbox" class="component">
+            <header>
+              <h2>Checkbox</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><label class="checkbox">  <input type="checkbox">  <div class="checkbox__checkmark"></div>  OFF</label><label class="checkbox">  <input type="checkbox" checked="checked">  <div class="checkbox__checkmark"></div>  ON</label><label class="checkbox">  <input type="checkbox" disabled>  <div class="checkbox__checkmark"></div>  Disabled</label></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;label class=&quot;checkbox&quot;&gt;  &lt;input type=&quot;checkbox&quot;&gt;  &lt;div class=&quot;checkbox__checkmark&quot;&gt;&lt;/div&gt;  OFF&lt;/label&gt;&lt;label class=&quot;checkbox&quot;&gt;  &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;  &lt;div class=&quot;checkbox__checkmark&quot;&gt;&lt;/div&gt;  ON&lt;/label&gt;&lt;label class=&quot;checkbox&quot;&gt;  &lt;input type=&quot;checkbox&quot; disabled&gt;  &lt;div class=&quot;checkbox__checkmark&quot;&gt;&lt;/div&gt;  Disabled&lt;/label&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="no-border-checkbox" class="component">
+            <header>
+              <h2>No border Checkbox</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><label class="checkbox--noborder">  <input type="checkbox">  <div class="checkbox__checkmark"></div>  OFF</label><label class="checkbox--noborder">  <input type="checkbox" checked="checked">  <div class="checkbox__checkmark"></div>  ON</label><label class="checkbox--noborder">  <input type="checkbox" disabled checked="checked">  <div class="checkbox__checkmark"></div>  Disabled</label></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;label class=&quot;checkbox--noborder&quot;&gt;  &lt;input type=&quot;checkbox&quot;&gt;  &lt;div class=&quot;checkbox__checkmark&quot;&gt;&lt;/div&gt;  OFF&lt;/label&gt;&lt;label class=&quot;checkbox--noborder&quot;&gt;  &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;  &lt;div class=&quot;checkbox__checkmark&quot;&gt;&lt;/div&gt;  ON&lt;/label&gt;&lt;label class=&quot;checkbox--noborder&quot;&gt;  &lt;input type=&quot;checkbox&quot; disabled checked=&quot;checked&quot;&gt;  &lt;div class=&quot;checkbox__checkmark&quot;&gt;&lt;/div&gt;  Disabled&lt;/label&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="radio-button" class="component">
+            <header>
+              <h2>Radio Button</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><label class="radio-button">  <input type="radio" name="r" checked="checked">  <div class="radio-button__checkmark"></div>  Label</label><label class="radio-button">  <input type="radio" name="r">  <div class="radio-button__checkmark"></div>  Label</label><label class="radio-button">  <input type="radio" name="r">  <div class="radio-button__checkmark"></div>  Label</label></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;label class=&quot;radio-button&quot;&gt;  &lt;input type=&quot;radio&quot; name=&quot;r&quot; checked=&quot;checked&quot;&gt;  &lt;div class=&quot;radio-button__checkmark&quot;&gt;&lt;/div&gt;  Label&lt;/label&gt;&lt;label class=&quot;radio-button&quot;&gt;  &lt;input type=&quot;radio&quot; name=&quot;r&quot;&gt;  &lt;div class=&quot;radio-button__checkmark&quot;&gt;&lt;/div&gt;  Label&lt;/label&gt;&lt;label class=&quot;radio-button&quot;&gt;  &lt;input type=&quot;radio&quot; name=&quot;r&quot;&gt;  &lt;div class=&quot;radio-button__checkmark&quot;&gt;&lt;/div&gt;  Label&lt;/label&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="list" class="component">
+            <header>
+              <h2>List</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__item">    <span class="list__item__line-height">Item</span>  </li>  <li class="list__item">    <span class="list__item__line-height">Item</span>  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__item&quot;&gt;    &lt;span class=&quot;list__item__line-height&quot;&gt;Item&lt;/span&gt;  &lt;/li&gt;  &lt;li class=&quot;list__item&quot;&gt;    &lt;span class=&quot;list__item__line-height&quot;&gt;Item&lt;/span&gt;  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="noborder-list" class="component">
+            <header>
+              <h2>Noborder List</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list list--noborder">  <li class="list__item">    <span class="list__item__line-height">Item</span>  </li>  <li class="list__item">    <span class="list__item__line-height">Item</span>  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list list--noborder&quot;&gt;  &lt;li class=&quot;list__item&quot;&gt;    &lt;span class=&quot;list__item__line-height&quot;&gt;Item&lt;/span&gt;  &lt;/li&gt;  &lt;li class=&quot;list__item&quot;&gt;    &lt;span class=&quot;list__item__line-height&quot;&gt;Item&lt;/span&gt;  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="category-list-header" class="component">
+            <header>
+              <h2>Category List Header</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__header">    Header  </li>  <li class="list__item">    Item  </li>  <li class="list__header">    Header  </li>  <li class="list__item">    Item  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__header&quot;&gt;    Header  &lt;/li&gt;  &lt;li class=&quot;list__item&quot;&gt;    Item  &lt;/li&gt;  &lt;li class=&quot;list__header&quot;&gt;    Header  &lt;/li&gt;  &lt;li class=&quot;list__item&quot;&gt;    Item  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="tappable-list" class="component">
+            <header>
+              <h2>Tappable List</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__item list__item--tappable">    Tappable Item  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__item list__item--tappable&quot;&gt;    Tappable Item  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="switch-in-list-item" class="component">
+            <header>
+              <h2>Switch in List Item</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__item">    Label    <label class="switch switch--list-item">      <input type="checkbox" class="switch__input" checked>      <div class="switch__toggle"></div>    </label>  </li>  <li class="list__item">    Label    <label class="switch switch--list-item">      <input type="checkbox" class="switch__input">      <div class="switch__toggle"></div>    </label>  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__item&quot;&gt;    Label    &lt;label class=&quot;switch switch--list-item&quot;&gt;      &lt;input type=&quot;checkbox&quot; class=&quot;switch__input&quot; checked&gt;      &lt;div class=&quot;switch__toggle&quot;&gt;&lt;/div&gt;    &lt;/label&gt;  &lt;/li&gt;  &lt;li class=&quot;list__item&quot;&gt;    Label    &lt;label class=&quot;switch switch--list-item&quot;&gt;      &lt;input type=&quot;checkbox&quot; class=&quot;switch__input&quot;&gt;      &lt;div class=&quot;switch__toggle&quot;&gt;&lt;/div&gt;    &lt;/label&gt;  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="list-item-with-chevron" class="component">
+            <header>
+              <h2>List Item with Chevron</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__item list__item--chevron">    Tappable Item  </li>  <li class="list__item list__item--chevron">    Tappable Item  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__item list__item--chevron&quot;&gt;    Tappable Item  &lt;/li&gt;  &lt;li class=&quot;list__item list__item--chevron&quot;&gt;    Tappable Item  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="inset-list" class="component">
+            <header>
+              <h2>Inset List</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list list--inset">  <li class="list__item list--inset__item list__item--chevron">    List Item with Chevron  </li>  <li class="list__item list--inset__item list__item--chevron">    List Item with Chevron  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list list--inset&quot;&gt;  &lt;li class=&quot;list__item list--inset__item list__item--chevron&quot;&gt;    List Item with Chevron  &lt;/li&gt;  &lt;li class=&quot;list__item list--inset__item list__item--chevron&quot;&gt;    List Item with Chevron  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="radio-button-in-list-item" class="component">
+            <header>
+              <h2>Radio Button in List Item</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__item list__item--tappable">    <label class="radio-button radio-button--list-item">      <input type="radio" name="b" checked="checked">      <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>      Radio Button    </label>  </li>  <li class="list__item list__item--tappable">    <label class="radio-button radio-button--list-item">      <input type="radio" name="b">      <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>      Radio Button    </label>  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__item list__item--tappable&quot;&gt;    &lt;label class=&quot;radio-button radio-button--list-item&quot;&gt;      &lt;input type=&quot;radio&quot; name=&quot;b&quot; checked=&quot;checked&quot;&gt;      &lt;div class=&quot;radio-button__checkmark radio-button--list-item__checkmark&quot;&gt;&lt;/div&gt;      Radio Button    &lt;/label&gt;  &lt;/li&gt;  &lt;li class=&quot;list__item list__item--tappable&quot;&gt;    &lt;label class=&quot;radio-button radio-button--list-item&quot;&gt;      &lt;input type=&quot;radio&quot; name=&quot;b&quot;&gt;      &lt;div class=&quot;radio-button__checkmark radio-button--list-item__checkmark&quot;&gt;&lt;/div&gt;      Radio Button    &lt;/label&gt;  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="checkbox-in-list-item" class="component">
+            <header>
+              <h2>Checkbox in List Item</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__item list__item--tappable">    <label class="checkbox checkbox--list-item">      <input type="checkbox">      <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>      Checkbox    </label>  </li>  <li class="list__item list__item--tappable">    <label class="checkbox checkbox--list-item">      <input type="checkbox" checked>      <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>      Checkbox    </label>  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__item list__item--tappable&quot;&gt;    &lt;label class=&quot;checkbox checkbox--list-item&quot;&gt;      &lt;input type=&quot;checkbox&quot;&gt;      &lt;div class=&quot;checkbox__checkmark checkbox--list-item__checkmark&quot;&gt;&lt;/div&gt;      Checkbox    &lt;/label&gt;  &lt;/li&gt;  &lt;li class=&quot;list__item list__item--tappable&quot;&gt;    &lt;label class=&quot;checkbox checkbox--list-item&quot;&gt;      &lt;input type=&quot;checkbox&quot; checked&gt;      &lt;div class=&quot;checkbox__checkmark checkbox--list-item__checkmark&quot;&gt;&lt;/div&gt;      Checkbox    &lt;/label&gt;  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="no-border-checkbox-in-list-item" class="component">
+            <header>
+              <h2>No border Checkbox in List Item</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__item list__item--tappable">    <label class="checkbox checkbox--noborder checkbox--list-item">      <input type="checkbox">      <div class="checkbox__checkmark checkbox--noborder checkbox--list-item__checkmark"></div>      Checkbox    </label>  </li>  <li class="list__item list__item--tappable">    <label class="checkbox checkbox--noborder checkbox--list-item">      <input type="checkbox" checked>      <div class="checkbox__checkmark checkbox--noborder checkbox--list-item__checkmark"></div>      Checkbox    </label>  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__item list__item--tappable&quot;&gt;    &lt;label class=&quot;checkbox checkbox--noborder checkbox--list-item&quot;&gt;      &lt;input type=&quot;checkbox&quot;&gt;      &lt;div class=&quot;checkbox__checkmark checkbox--noborder checkbox--list-item__checkmark&quot;&gt;&lt;/div&gt;      Checkbox    &lt;/label&gt;  &lt;/li&gt;  &lt;li class=&quot;list__item list__item--tappable&quot;&gt;    &lt;label class=&quot;checkbox checkbox--noborder checkbox--list-item&quot;&gt;      &lt;input type=&quot;checkbox&quot; checked&gt;      &lt;div class=&quot;checkbox__checkmark checkbox--noborder checkbox--list-item__checkmark&quot;&gt;&lt;/div&gt;      Checkbox    &lt;/label&gt;  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="text-input-in-list-item" class="component">
+            <header>
+              <h2>Text Input in List Item</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__item">    <input type="text" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="name">  </li>  <li class="list__item">    <input type="text" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="email">  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__item&quot;&gt;    &lt;input type=&quot;text&quot; class=&quot;text-input text-input--transparent&quot; style=&quot;width:100%; margin-top:4px;&quot; placeholder=&quot;name&quot;&gt;  &lt;/li&gt;  &lt;li class=&quot;list__item&quot;&gt;    &lt;input type=&quot;text&quot; class=&quot;text-input text-input--transparent&quot; style=&quot;width:100%; margin-top:4px;&quot; placeholder=&quot;email&quot;&gt;  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="textarea-in-list-item" class="component">
+            <header>
+              <h2>Textarea in List Item</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__item">    <textarea class="textarea textarea--transparent" style="width:100%;height:50px;margin-top:4px;" placeholder="text message"></textarea>  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__item&quot;&gt;    &lt;textarea class=&quot;textarea textarea--transparent&quot; style=&quot;width:100%;height:50px;margin-top:4px;&quot; placeholder=&quot;text message&quot;&gt;&lt;/textarea&gt;  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="right-label-in-list-item" class="component">
+            <header>
+              <h2>Right Label in List Item</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><ul class="list">  <li class="list__item">    <div class="list__right-label">Label</div>    Label  </li></ul></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;ul class=&quot;list&quot;&gt;  &lt;li class=&quot;list__item&quot;&gt;    &lt;div class=&quot;list__right-label&quot;&gt;Label&lt;/div&gt;    Label  &lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="search-input" class="component">
+            <header>
+              <h2>Search Input</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><input type="search" value="" placeholder="Search" class="search-input"></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;input type=&quot;search&quot; value=&quot;&quot; placeholder=&quot;Search&quot; class=&quot;search-input&quot;&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="text-input" class="component">
+            <header>
+              <h2>Text Input</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><input type="text" class="text-input" placeholder="text" value=""><br><input type="text" class="text-input" placeholder="text" value="" disabled></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;input type=&quot;text&quot; class=&quot;text-input&quot; placeholder=&quot;text&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;input type=&quot;text&quot; class=&quot;text-input&quot; placeholder=&quot;text&quot; value=&quot;&quot; disabled&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="transparent-text-input" class="component">
+            <header>
+              <h2>Transparent Text Input</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><input type="text" class="text-input--transparent" placeholder="text" value=""><br><input type="text" class="text-input--transparent" placeholder="text" value="" disabled></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;input type=&quot;text&quot; class=&quot;text-input--transparent&quot; placeholder=&quot;text&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;input type=&quot;text&quot; class=&quot;text-input--transparent&quot; placeholder=&quot;text&quot; value=&quot;&quot; disabled&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="underbar-text-input" class="component">
+            <header>
+              <h2>Underbar Text Input</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><input type="text" class="text-input--underbar" placeholder="text" value=""><br><input type="text" class="text-input--underbar" placeholder="text" value="" disabled></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;input type=&quot;text&quot; class=&quot;text-input--underbar&quot; placeholder=&quot;text&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;input type=&quot;text&quot; class=&quot;text-input--underbar&quot; placeholder=&quot;text&quot; value=&quot;&quot; disabled&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="textarea" class="component">
+            <header>
+              <h2>Textarea</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><textarea class="textarea" rows="3" placeholder="Textarea"></textarea></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;textarea class=&quot;textarea&quot; rows=&quot;3&quot; placeholder=&quot;Textarea&quot;&gt;&lt;/textarea&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="textarea-transparent" class="component">
+            <header>
+              <h2>Textarea Transparent</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><textarea class="textarea--transparent" rows="3" placeholder="Textarea"></textarea></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;textarea class=&quot;textarea--transparent&quot; rows=&quot;3&quot; placeholder=&quot;Textarea&quot;&gt;&lt;/textarea&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="dialog" class="component">
+            <header>
+              <h2>Dialog</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="dialog-mask"></div><div class="dialog">  <div class="page">    <p style="text-align:center;margin-top:40px;opacity:0.4;">Content</p>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;dialog-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;dialog&quot;&gt;  &lt;div class=&quot;page&quot;&gt;    &lt;p style=&quot;text-align:center;margin-top:40px;opacity:0.4;&quot;&gt;Content&lt;/p&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="alert-dialog" class="component">
+            <header>
+              <h2>Alert Dialog</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 360px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="alert-dialog-mask"></div><div class="alert-dialog">  <div class="alert-dialog-title">Alert</div>  <div class="alert-dialog-content">    Hello World!  </div>  <div class="alert-dialog-footer">    <button class="alert-dialog-button alert-dialog-button--primal">OK</button>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;alert-dialog-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alert-dialog&quot;&gt;  &lt;div class=&quot;alert-dialog-title&quot;&gt;Alert&lt;/div&gt;  &lt;div class=&quot;alert-dialog-content&quot;&gt;    Hello World!  &lt;/div&gt;  &lt;div class=&quot;alert-dialog-footer&quot;&gt;    &lt;button class=&quot;alert-dialog-button alert-dialog-button--primal&quot;&gt;OK&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="alert-dialog-without-title" class="component">
+            <header>
+              <h2>Alert Dialog without Title</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 360px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="alert-dialog-mask"></div><div class="alert-dialog">  <div class="alert-dialog-content">    Hello World!  </div>  <div class="alert-dialog-footer">    <button class="alert-dialog-button alert-dialog-button--primal">OK</button>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;alert-dialog-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alert-dialog&quot;&gt;  &lt;div class=&quot;alert-dialog-content&quot;&gt;    Hello World!  &lt;/div&gt;  &lt;div class=&quot;alert-dialog-footer&quot;&gt;    &lt;button class=&quot;alert-dialog-button alert-dialog-button--primal&quot;&gt;OK&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="alert-dialog-with-multiple-buttons" class="component">
+            <header>
+              <h2>Alert Dialog with Multiple Buttons</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 360px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="alert-dialog-mask"></div><div class="alert-dialog">  <div class="alert-dialog-content">    Hello World!  </div>  <div class="alert-dialog-footer">    <button class="alert-dialog-button">Cancel</button>    <button class="alert-dialog-button alert-dialog-button--primal">OK</button>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;alert-dialog-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alert-dialog&quot;&gt;  &lt;div class=&quot;alert-dialog-content&quot;&gt;    Hello World!  &lt;/div&gt;  &lt;div class=&quot;alert-dialog-footer&quot;&gt;    &lt;button class=&quot;alert-dialog-button&quot;&gt;Cancel&lt;/button&gt;    &lt;button class=&quot;alert-dialog-button alert-dialog-button--primal&quot;&gt;OK&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="alert-dialog-with-multiple-buttons-2" class="component">
+            <header>
+              <h2>Alert Dialog with Multiple Buttons 2</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 360px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="alert-dialog-mask"></div><div class="alert-dialog">  <div class="alert-dialog-title">Alert</div>  <div class="alert-dialog-content">    Hello World!  </div>  <div class="alert-dialog-footer alert-dialog-footer--one">    <button class="alert-dialog-button alert-dialog-button--one">Left</button>    <button class="alert-dialog-button alert-dialog-button--primal alert-dialog-button--one">Center</button>    <button class="alert-dialog-button alert-dialog-button--one">Right</button>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;alert-dialog-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alert-dialog&quot;&gt;  &lt;div class=&quot;alert-dialog-title&quot;&gt;Alert&lt;/div&gt;  &lt;div class=&quot;alert-dialog-content&quot;&gt;    Hello World!  &lt;/div&gt;  &lt;div class=&quot;alert-dialog-footer alert-dialog-footer--one&quot;&gt;    &lt;button class=&quot;alert-dialog-button alert-dialog-button--one&quot;&gt;Left&lt;/button&gt;    &lt;button class=&quot;alert-dialog-button alert-dialog-button--primal alert-dialog-button--one&quot;&gt;Center&lt;/button&gt;    &lt;button class=&quot;alert-dialog-button alert-dialog-button--one&quot;&gt;Right&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="android-like-alert-dialog" class="component">
+            <header>
+              <h2>Android-like Alert Dialog</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 360px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="alert-dialog-mask"></div><div class="alert-dialog alert-dialog--android">  <div class="alert-dialog-title alert-dialog-title--android">    Alert  </div>  <div class="alert-dialog-content alert-dialog-content--android">    Hello World!  </div>  <div class="alert-dialog-footer alert-dialog-footer--one">    <button class="alert-dialog-button alert-dialog-button--one">Cancel</button>    <button class="alert-dialog-button alert-dialog-button--primal alert-dialog-button--one">Ok</button>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;alert-dialog-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alert-dialog alert-dialog--android&quot;&gt;  &lt;div class=&quot;alert-dialog-title alert-dialog-title--android&quot;&gt;    Alert  &lt;/div&gt;  &lt;div class=&quot;alert-dialog-content alert-dialog-content--android&quot;&gt;    Hello World!  &lt;/div&gt;  &lt;div class=&quot;alert-dialog-footer alert-dialog-footer--one&quot;&gt;    &lt;button class=&quot;alert-dialog-button alert-dialog-button--one&quot;&gt;Cancel&lt;/button&gt;    &lt;button class=&quot;alert-dialog-button alert-dialog-button--primal alert-dialog-button--one&quot;&gt;Ok&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="popover" class="component">
+            <header>
+              <h2>Popover</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="popover-mask"></div><div class="popover popover--up" style="bottom:20px;left:50px;">  <div class="popover__bottom-arrow"></div>  <div class="popover__content">    <div style="text-align:center;opacity:0.4;margin-top:40px">Content</div>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;popover-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover popover--up&quot; style=&quot;bottom:20px;left:50px;&quot;&gt;  &lt;div class=&quot;popover__bottom-arrow&quot;&gt;&lt;/div&gt;  &lt;div class=&quot;popover__content&quot;&gt;    &lt;div style=&quot;text-align:center;opacity:0.4;margin-top:40px&quot;&gt;Content&lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="popoverdown)" class="component">
+            <header>
+              <h2>Popover(down)</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="popover-mask"></div><div class="popover popover--down" style="top:20px;left:50px;">  <div class="popover__top-arrow"></div>  <div class="popover__content">    <div style="text-align:center;opacity:0.4;margin-top:40px">Content</div>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;popover-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover popover--down&quot; style=&quot;top:20px;left:50px;&quot;&gt;  &lt;div class=&quot;popover__top-arrow&quot;&gt;&lt;/div&gt;  &lt;div class=&quot;popover__content&quot;&gt;    &lt;div style=&quot;text-align:center;opacity:0.4;margin-top:40px&quot;&gt;Content&lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="popoverleft)" class="component">
+            <header>
+              <h2>Popover(left)</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="popover-mask"></div><div class="popover popover--left" style="top:20px;right:20px;">  <div class="popover__right-arrow"></div>  <div class="popover__content">    <div style="text-align:center;opacity:0.4;margin-top:40px">Content</div>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;popover-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover popover--left&quot; style=&quot;top:20px;right:20px;&quot;&gt;  &lt;div class=&quot;popover__right-arrow&quot;&gt;&lt;/div&gt;  &lt;div class=&quot;popover__content&quot;&gt;    &lt;div style=&quot;text-align:center;opacity:0.4;margin-top:40px&quot;&gt;Content&lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="popoverright)" class="component">
+            <header>
+              <h2>Popover(right)</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="popover-mask"></div><div class="popover popover--right" style="top:20px;left:20px;">  <div class="popover__left-arrow"></div>  <div class="popover__content">    <div style="text-align:center;opacity:0.4;margin-top:40px">Content</div>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;popover-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover popover--right&quot; style=&quot;top:20px;left:20px;&quot;&gt;  &lt;div class=&quot;popover__left-arrow&quot;&gt;&lt;/div&gt;  &lt;div class=&quot;popover__content&quot;&gt;    &lt;div style=&quot;text-align:center;opacity:0.4;margin-top:40px&quot;&gt;Content&lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="android-like-popover" class="component">
+            <header>
+              <h2>Android-like Popover</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="popover-mask"></div><div class="popover popover--up popover" style="top:10px;right:10px;">  <div class="popover__content popover__content--android">    <div style="text-align:center;opacity:0.4;margin-top:40px">Content</div>  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;popover-mask&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover popover--up popover&quot; style=&quot;top:10px;right:10px;&quot;&gt;  &lt;div class=&quot;popover__content popover__content--android&quot;&gt;    &lt;div style=&quot;text-align:center;opacity:0.4;margin-top:40px&quot;&gt;Content&lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="modal" class="component">
+            <header>
+              <h2>Modal</h2>
+            </header>
+            <section class="component">
+              <div style="width: 320px; position: relative; min-height: 160px;" class="markup page__background">
+                <div style="width: 100%; height: 100%; position:absolute"><div class="modal">  <div class="modal__content">    Message Text  </div></div></div>
+              </div>
+            </section>
+            <footer class="showcode"><a href="#">Show code snippets</a>
+              <section class="code">
+                <div>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;modal&quot;&gt;  &lt;div class=&quot;modal__content&quot;&gt;    Message Text  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+        </div>
+        <footer></footer>
+      </div>
+    </div>
+    <script src="js/rainbow-custom.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

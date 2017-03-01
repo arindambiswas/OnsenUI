@@ -1,0 +1,121 @@
+/*
+Copyright 2013-2015 ASIAL CORPORATION
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+ */
+
+@import url("font_awesome/css/font-awesome.min.css");
+@import url("ionicons/css/ionicons.min.css");
+
+/* cutsom elements */
+ons-page, ons-navigator,
+ons-split-view, ons-sliding-menu, ons-tabbar,
+ons-gesture-detector {
+  display: block;
+}
+
+ons-navigator,
+ons-tabbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+ons-page, ons-navigator, ons-tabbar, ons-sliding-menu, ons-split-view {
+  z-index: 2;
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+.page,
+.page__content {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+.page__status-bar-fill ~ .page__content {
+  padding-top: 20px;
+}
+
+ons-toolbar ~ .page__content {
+  top: 44px;
+}
+
+.page__status-bar-fill ~ ons-toolbar {
+  height: 64px;
+}
+
+.page__status-bar-fill ~ ons-toolbar > .center,
+.page__status-bar-fill ~ ons-toolbar > .left,
+.page__status-bar-fill ~ ons-toolbar > .right {
+  padding-top: 20px;
+}
+
+.page__status-bar-fill ~ ons-toolbar ~ .page__content {
+  top: 64px;
+  padding-top: 0px;
+}
+
+.page__content {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  -ms-touch-action: pan-y;
+}
+
+.page__bottom-bar-fill ~ .page__content {
+  bottom: 44px;
+}
+
+.page__content::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-bar__status-bar-fill ~ .tab-bar--top__content {
+  top: 71px;
+}
+
+.tab-bar__status-bar-fill ~ .tab-bar--top {
+  padding-top: 22px;
+}
+
+ons-dialog[disabled] > .dialog,
+ons-alert-dialog[disabled],
+ons-popover[disabled] {
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+ons-pull-hook {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+

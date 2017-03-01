@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Demo Index | Onsen UI</title>  
+  <link rel="stylesheet" href="styles/app.css"/>
+  <link rel="stylesheet" href="../build/css/onsenui.css">  
+  <link rel="stylesheet" href="../build/css/onsen-css-components.css">  
+
+  <script src="../build/js/angular/angular.js"></script>    
+  <script src="../build/js/onsenui.js"></script>    
+  <script src="app.js"></script>  
+  <script>
+  var module = angular.module('myApp', ['onsen.directives']); 
+  module.controller('DemoListController', function($scope, $window) {
+    $scope.containerDemoList = [
+      {href : 'alert_dialog/', name : 'Alert dialog'},
+      {href : 'bottom_toolbar/', name : 'Bottom Toolbar'},
+      {href : 'carousel/', name : 'Carousel'},
+      {href : 'carousel_pull_hook/', name : 'Carousel and Pull Hook'},
+      {href : 'dialog/', name : 'Dialog'},
+      {href : 'gesture_detector/', name : 'Gesture Detector'},
+      {href : 'grid/', name : 'Grid'},
+      {href : 'if_orientation/', name : 'Orientation'},
+      {href : 'if_platform/', name : 'Platform'},
+      {href : 'lazy_repeat', name : 'Lazy Repeat'},
+      {href : 'loading_placeholder/', name : 'Loading Placeholder'},
+      {href : 'list/', name : 'List'},
+      {href : 'list_composition/', name : 'List Composition'},
+      {href : 'modal/', name : 'Modal'},
+      {href : 'navigator/', name : 'Navigator'},
+      {href : 'navigator_insert/', name : 'Navigator: Insert page'},
+      {href : 'navigator_inside_tabbar/', name : 'Navigator inside Tabbar'},
+      {href : 'navigator_navigator/', name : 'Nesting Navigator'},
+      {href : 'navigator_reset/', name : 'Navigator: Reset'},
+      {href : 'navigator_sliding-menu/', name : 'Sliding Menu inside Navigator'},
+      {href : 'navigator_split-view/', name : 'Split View inside Navigator'},
+      {href : 'page/', name : 'Page'},
+      {href : 'popover/', name : 'Popover'},
+      {href : 'pull_hook/', name : 'Pull Hook'},
+      {href : 'pull_hook_transition/', name : 'Pull Hook with CSS transition'},
+      {href : 'sliding_menu/', name : 'Sliding Menu'},
+      {href : 'split_view/', name : 'Split View'},
+      {href : 'tabbar/', name : 'Tabbar (Icon with Label)'},
+      {href : 'tabbar_icon/', name : 'Tabbar (Icon only)'},
+      {href : 'tabbar_text/', name : 'Tabbar (Label only)'},
+      {href : 'tabbar_top/', name : 'Top Tabbar'},
+      {href : 'tabbar_toolbar_top/', name : 'Toolbar and Top Tabbar'},
+      {href : 'scroller/', name : 'Scroller'}
+    ];
+    $scope.inlineDemoList = [
+      {href : 'button/', name : 'Button'},
+      {href : 'checkbox/', name : 'Checkbox'},
+      {href : 'icon/', name : 'Icons'},
+      {href : 'radio_button/', name : 'Radio Button'},
+      {href : 'search_input/', name : 'Search Input'},
+      {href : 'switch', name : 'Switch'},
+      {href : 'text_input/', name : 'Text Input'},
+      {href : 'textarea/', name : 'Text Area'}
+    ];
+    $scope.go = function(demo) {
+      $window.location.href = demo.href;
+    };
+  });
+  </script>  
+  
+</head>
+
+<body ng-controller="DemoListController">    
+  
+  <ons-navigator>
+    <ons-page>
+      <ons-toolbar>
+        <div class="center">Demo</div>
+      </ons-toolbar>
+      <ons-list>
+        <ons-list-header>Container Elements</ons-list-header>
+        <ons-list-item modifier="chevron" ng-repeat="demo in containerDemoList">
+          <div ng-click="go(demo)">
+            {{demo.name}}
+          </div>
+        </ons-list-item>
+        <ons-list-header>Inline Elements</ons-list-header>
+        <ons-list-item modifier="chevron" ng-repeat="demo in inlineDemoList">
+          <div ng-click="go(demo)">
+            {{demo.name}}
+          </div>
+        </ons-list-item>
+      </ons-list>
+    </ons-page>
+  </ons-navigator>
+ 
+</body>
+</html>
