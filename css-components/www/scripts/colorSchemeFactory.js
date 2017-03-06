@@ -8,7 +8,11 @@ angular.module('app').factory('ColorSchemeFactory', function(ColorScheme) {
   return {
     getSchemes: function() {
       return schemes;
+    },
+
+    getLoadedSchemes: function(scheme) {
+      return new ColorScheme(scheme);
     }
+
   };
 });
-

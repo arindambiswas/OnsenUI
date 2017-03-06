@@ -20,6 +20,7 @@ angular.module('app').controller('AppController',
     } else {
       $scope.components.forEach(function(component, i) {
         component.css = ComponentCollection.all()[i].css;
+
       });
     }
 
@@ -51,6 +52,34 @@ angular.module('app').controller('AppController',
     schemeSwitcher.current.setColor(variableName, color);
   }.bind(this);
 
+
+  function loadCssFile() {
+
+    var cssFile = $location.search().cssfile;
+    if(cssFile !== undefined){
+      console.log("cssFile---->>",cssFile);
+        $http.get(cssFile)
+       .then(function(response) {
+         var responseData = response.data;
+         var scheme =  responseData.substring(responseData.indexOf("/*")+2,responseData.indexOf("*/"));
+
+         console.log("$scope.colorSchemeSwitcher --- before",$scope.colorSchemeSwitcher);
+
+         console.log("scheme",scheme);
+         console.log("scheme",JSON.parse(scheme));
+          $scope.colorSchemeSwitcher.current = ColorSchemeFactory.getLoadedSchemes(JSON.parse(scheme));
+          $scope.setColorScheme($scope.colorSchemeSwitcher.current);
+          console.log("$scope.colorSchemeSwitcher current",$scope.colorSchemeSwitcher.current);
+
+
+       });
+
+    }
+
+  }
+
+  loadCssFile();
+
   var schemeSwitcher = {
     current: ColorSchemeFactory.getSchemes()[0],
     schemes: ColorSchemeFactory.getSchemes()
@@ -62,6 +91,7 @@ angular.module('app').controller('AppController',
   }
 
   $scope.setColorScheme = function(colorScheme) {
+    console.log("setColorScheme --=-==-=-==-=--=>",colorScheme);
     setColors(colorScheme.getColors());
     ga('send', 'event', 'color', 'setColorScheme', colorScheme.text);
   };

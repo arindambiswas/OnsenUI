@@ -13,6 +13,7 @@ var archiver = require('archiver');
 var Q = require('q');
 var debug = require('debug')('my-application');
 var schemeWriter = require('./schemeWriter');
+var util = require('util');
 
 module.exports = function(middlewares, fn) {
 
@@ -163,7 +164,12 @@ module.exports = function(middlewares, fn) {
     .then(compiler.compile)
     .then(prefix)
     .then(function(css) {
-      archive.append(css, {name: 'onsen-css-components.css'});
+      var startStr = '/*{"text": "blue-basic","colors":';
+      var endStr = "} */"
+      var varJson = startStr + util.inspect(variables).replace(/'/g, '"') +endStr;
+      var newCss = varJson + css;
+      console.log("_>>__>_>___>_>",newCss);
+      archive.append(newCss, {name: 'onsen-css-components.css'});
       return css;
     })
     .then(minify).then(function(minifiedCSS) {
@@ -228,4 +234,3 @@ module.exports = function(middlewares, fn) {
 
   return app;
 };
-
