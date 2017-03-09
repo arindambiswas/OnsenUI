@@ -168,16 +168,23 @@ module.exports = function(middlewares, fn) {
       var endStr = "} */"
       var varJson = startStr + util.inspect(variables).replace(/'/g, '"') +endStr;
       var newCss = varJson + css;
-      console.log("_>>__>_>___>_>",newCss);
+      //console.log("_>>__>_>___>_>",newCss);
       archive.append(newCss, {name: 'onsen-css-components.css'});
       return css;
     })
     .then(minify).then(function(minifiedCSS) {
-      archive.append(minifiedCSS, { name: 'onsen-css-components.min.css' });
+      var startStr = '/*{"text": "blue-basic","colors":';
+      var endStr = "} */"
+      var varJson = startStr + util.inspect(variables).replace(/'/g, '"') +endStr;
+      var newCss = varJson + minifiedCSS;
+
+      archive.append(newCss, { name: 'onsen-css-components.min.css' });
+      /*
       archive.append(schemeWriter.generateThemeStylus({
         text: 'custom',
         colors: variables
       }), {name: 'stylus/custom-theme.stylus'});
+      */
     });
   }
 
@@ -186,8 +193,8 @@ module.exports = function(middlewares, fn) {
     var variableJson = req.query;
 
     Q.all([
-      addDownloadTemplateFilesToZip(archive),
-      addStylusFilesToZip(archive),
+      //addDownloadTemplateFilesToZip(archive),
+      //addStylusFilesToZip(archive),
       addCSSFilesToZip(variableJson, archive)
     ]).then(function(){
       archive.finalize();
