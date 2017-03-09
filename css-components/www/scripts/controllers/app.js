@@ -182,7 +182,7 @@ angular.module('app').controller('AppController',
       setTimeout(function(){
         $('#download-iframe').attr('src', downloadURL);
       }, 5000);
-      show.apply(this, []);
+      // show.apply(this, []);
       ga('send', 'event', 'dialog', 'thankyouDialog');
     };
 
